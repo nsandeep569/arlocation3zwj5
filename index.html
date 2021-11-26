@@ -26,72 +26,72 @@
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.788623483594982; longitude: 84.08194184303285;"
                 ></a-image>
-<!--                 <a-image 
+<!--                 <a-image id="mainImage1"
                     src="assets/file_example_MP4_480_1_5MG.mp4"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.7865799; longitude: 84.0854116;"
                 ></a-image> -->
-                <a-video  webkit-playsinline playsinline src="assets/file_example_MP4_480_1_5MG.mp4"
+                <a-video  id="mainImage2" webkit-playsinline playsinline src="assets/file_example_MP4_480_1_5MG.mp4"
                         look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.7865799; longitude: 84.0854116;" 
                          ></a-video>
-                <a-image
+                <a-image  id="mainImage3"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.7863198; longitude: 84.0853324;"
                 ></a-image>
-                <a-image 
+                <a-image  id="mainImage4"
                     src="assets/SampleJPGImage_50kbmb.jpg"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.7872; longitude: 84.0897306;"
                 ></a-image>
-                <a-image 
+                <a-image  id="mainImage5"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.78660419056821; longitude: 84.08531093863265;"
                 ></a-image>
-                <a-image 
+                <a-image  id="mainImage6"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.786416328519483; longitude: 84.08655558336412;"
                 ></a-image>
-                <a-image 
+                <a-image id="mainImage7"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.786432167576645; longitude: 84.08621172859074;"
                 ></a-image>
-                <a-image
+                <a-image id="mainImage8"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.786477864143976; longitude: 84.08585499973896;"
                 ></a-image>
-                <a-image 
+                <a-image id="mainImage9"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.78650824618774; longitude: 84.08552536415682;"
                 ></a-image>
-                <a-image 
+                <a-image id="mainImage10"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.78690191965208; longitude: 84.08970165519952;"
                 ></a-image>
-                <a-image
+                <a-image id="mainImage11"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
                     gps-entity-place="latitude: 18.786950246061135; longitude: 84.0896413641729;"
                 ></a-image>
-                <a-image 
+                <a-image id="mainImage12"
                     src="assets/asset.png"
                     look-at="[gps-camera]"
                     scale="1 1 1"
@@ -105,16 +105,38 @@
 				var scale=1;
 				$("#increaseSize").click(function(){
   scale=scale+1;
-  console.log($('#mainImage'))
   if(scale>0){
-  $("#mainImage").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString())
-  console.log($('#mainImage'))
+  $("#mainImage").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage1").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage2").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage3").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage4").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage5").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage6").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage7").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage8").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage9").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage10").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage11").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage12").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
   }
 })
 $("#decreaseSize").click(function(){
   scale=scale-1;
   if(scale>0){
-    $("#mainImage").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString())
+      $("#mainImage").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage1").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage2").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage3").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage4").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage5").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage6").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage7").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage8").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage9").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage10").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage11").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
+  $("#mainImage12").attr("scale",scale.toString() + ' ' + scale.toString() + ' ' + scale.toString());
   }
 })}
 );
